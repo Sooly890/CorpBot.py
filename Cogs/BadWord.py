@@ -3,9 +3,6 @@ import regex as re
 from discord.ext import commands
 from datetime import timedelta
 from Cogs import Settings, DisplayName, Utils
-import joblib
-import sys
-sys.modules['sklearn.externals.joblib'] = joblib
 from profanity_check import predict_prob
 
 def setup(bot):
