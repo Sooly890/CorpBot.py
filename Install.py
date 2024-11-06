@@ -231,7 +231,7 @@ if __name__ == '__main__':
         {"name":"pymongo"},
         {"name":"geopy"},
         {"name":"pyfiglet"},
-        {"name":"regex"}
+        {"name":"regex"},
         {"name":"profanity-check"}
     ])
     db_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),"Cogs","PandorasDB.py")
