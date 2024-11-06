@@ -3,6 +3,7 @@ import regex as re
 from discord.ext import commands
 from datetime import timedelta
 from Cogs import Settings, DisplayName, Utils
+import joblib
 from profanity_check import predict_prob
 
 def setup(bot):
@@ -32,5 +33,4 @@ class BadWord(commands.Cog):
 		if prob[0] > 0.5:
 			msg = 'Naught naughty, *{}* said a bad word!'.format(DisplayName.DisplayName.memberForName(member))
 			await ctx.send(msg)
-		
-		
+			
